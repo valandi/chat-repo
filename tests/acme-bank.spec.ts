@@ -114,8 +114,8 @@ test.describe('NAB Chat Widget', () => {
         await eyes.check(
               'Welcome screen',
               Target.region('iframe#web-messenger-container')
+              // .region('khScrollArea')
                 .fully()
-                // .scrollRootElement('.khScrollArea.emotion-css-cache-13ef1k3')
                 .ignoreRegions('.BusinessProfile__introductionText--Vr2lB.khBusinessProfileIntroText')
         );
 
